@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background: #120030;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.App-header {
+  background: #DBFF00;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+  position: relative
+}
+
+.header-block {
+  padding-top: 10px;
+  background: linear-gradient(#FFFFFF, rgb(0 220 255));
+  width: 30%;
+  height: 40px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.header-block-text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.App-main {
+  background: #DBFF00;
+  width: 45%;
+  height: 60%;
+  margin: 0 auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  margin-top: 150px;
+
+}
+
+.content-block {
+  background: #120030;
+  width: 90%;
+  height: 90%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.content {
+  height: 70%;
+}
+
+.content h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.buttonFact {
+  width: 250px;
+  height: 70px;
+  font-size: 32px;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #120030;
+  font-family: 'Arbutus', cursive;
+  color: #444444;
+  background: #DBFF00;
+  color: black;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 19px
+}
+
+.buttonFact:active {
+  background: rgb(243, 20, 57)
+}
+
+@media (min-width: 330px) and (max-width:600px) {
+
+  .header-block {
+    width: 250px;
+  }
+
+  .App-main {
+    width: 95%;
+    height: 80%;
+    margin-top: 40px;
+  }
+
+  .content h1 {
+    font-size: 45px;
+    height: 100%;
+  }
+
+  .buttonFact {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 601px) and (max-width:900px) {
+  .header-block {
+    width: 45%;
+  }
+
+  .App-main {
+    margin-top: 75px;
+    width: 90%;
+    height: 75%;
+  }
+
+  .buttonFact {
+    margin-top: 80px;
+  }
+}
+
+
+@media (min-width:901px) and (max-width:1400px) {
+  .header-block {
+    width: 45%;
+  }
+
+  .App-main {
+    margin-top: 75px;
+    width: 60%;
+    height: 75%;
+  }
+
+  .buttonFact {
+    margin-top: 50px;
+  }
+}
